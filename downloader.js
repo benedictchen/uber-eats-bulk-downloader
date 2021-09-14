@@ -8,10 +8,23 @@ getPage = function() {
     return Array.from(document.querySelectorAll('button')).filter((btn) => btn.textContent === 'さらに表示').pop();
 }
 
+function showStartButton() {
+    const startBtn = document.createElement('button');
+    startBtn.textContent = "Start Download";
+    startBtn.style = "position: fixed; bottom: 30px; right: 30px;";
+    startBtn.onclick = () => {
+        x(buttons, 0);
+        startBtn.remove();
+    }
+    document.body.appendChild(startBtn);
+}
+
 function getPageLooper() {
     if (getPage()) {
-        getPage().click();
-        setTimeout(getPageLooper, 3000);
+        getPage()?.click();
+        setTimeout(getPageLooper, 5000);
+    } else {
+        showStartButton();
     }
 }
 
@@ -41,6 +54,7 @@ x = async function(buttons, i) {
       x(buttons, i + 1);
     }
 }
+
 
 
 
