@@ -11,7 +11,7 @@ getPage = function() {
 function showStartButton() {
     const startBtn = document.createElement('button');
     startBtn.textContent = "Start Download";
-    startBtn.style = "position: fixed; bottom: 30px; right: 30px; color: white; background: red; border-radius: 50px; box-shadow: 0 0 30px black; padding: 30px;";
+    startBtn.style = "position: fixed; bottom: 50%; right: 50%; color: white; background: red; border-radius: 50px; box-shadow: 0 0 30px black; padding: 30px;";
     startBtn.onclick = () => {
         x(buttons, 0);
         startBtn.remove();
