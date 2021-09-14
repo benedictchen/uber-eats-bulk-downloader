@@ -38,6 +38,7 @@ buttons = Array.from(document.querySelectorAll('a')).filter(el => {
 
 // open dialogs
 x = async function(buttons, i) {
+    console.log(`Attempting to download ${i} of ${buttons.length}`);
     let button = buttons[i];
     if (!button) return;
     console.log(new Date(), 'clicking button', {button});
