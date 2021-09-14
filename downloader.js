@@ -1,6 +1,6 @@
-SHOW_RECIEPT_TEXT = '領収書を表示する';
-DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';
-CLOSE_BUTTON_TEXT = "閉じる";
+SHOW_RECIEPT_TEXT = '領収書を表示する';  // Replace with text of url link for showing the reciept
+DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';  // Replace with PDF download link / button text content
+CLOSE_BUTTON_TEXT = "閉じる";  // Replace with close button aria-label (probably "Close" or something like that
 
 /// GET ALL RESULTS 
 getPage = function() {
