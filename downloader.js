@@ -47,8 +47,8 @@ x = async function(buttons, i) {
     await new Promise((resolve) => setTimeout(resolve, 3000));
     console.log(new Date(), 'clicking download');
     Array.from(document.querySelectorAll('a')).filter(el => el.innerText === DOWNLOAD_PDF_BTN_TEXT).pop()?.click();
-    console.log(new Date(), 'waiting 5 seconds');
-    await new Promise((resolve) => setTimeout(resolve, 5000));
+    console.log(new Date(), 'waiting 3 seconds');
+    await new Promise((resolve) => setTimeout(resolve, 3000));
     document.querySelector('button[aria-label=' + CLOSE_BUTTON_TEXT + ']')?.click()
     console.log(new Date(), 'moving onto next...');
     if (buttons[i + 1]) {
