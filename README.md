@@ -1,4 +1,4 @@
-# uber-eats-bulk-downloader
+# UberEats Bulk Reciept PDF Downloader
 Bulk downloader for Uber Eats reciepts
 
 I created this because I needed a simple script I could copy and paste into the Chrome inspector console.  
