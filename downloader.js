@@ -15,6 +15,8 @@ function getPageLooper() {
     }
 }
 
+getPageLooper();
+
 // get all buttons
 
 buttons = Array.from(document.querySelectorAll('a')).filter(el => {
@@ -39,3 +41,5 @@ x = async function(buttons, i) {
       x(buttons, i + 1);
     }
 }
+
+x(buttons, 0);
