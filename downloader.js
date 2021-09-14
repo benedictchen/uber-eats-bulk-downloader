@@ -11,7 +11,7 @@ getPage = function() {
 function getPageLooper() {
     if (getPage()) {
         getPage().click();
-        setTimeout(getPageLooper, 1000);
+        setTimeout(getPageLooper, 3000);
     }
 }
 
