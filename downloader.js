@@ -38,7 +38,12 @@ buttons = Array.from(document.querySelectorAll('a')).filter(el => {
 
 // open dialogs
 x = async function(buttons, i) {
-    console.log(`Attempting to download ${i} of ${buttons.length}`);
+    const message = `Attempting to download ${i} of ${buttons.length}`;
+    const messageEl = document.createElement('p');
+    messageEl.style = "background: yellow; color: black;";
+    messageEl.textContent = message;
+    document.body.appendChild(messageEl);
+    console.log(message);
     let button = buttons[i];
     if (!button) return;
     console.log(new Date(), 'clicking button', {button});
