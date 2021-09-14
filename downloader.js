@@ -1,3 +1,7 @@
+SHOW_RECIEPT_TEXT = '領収書を表示する';
+DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';
+CLOSE_BUTTON_TEXT = "閉じる";
+
 /// GET ALL RESULTS 
 getPage = function() {
     console.log('getting page')
@@ -14,7 +18,7 @@ function getPageLooper() {
 // get all buttons
 
 buttons = Array.from(document.querySelectorAll('a')).filter(el => {
-    return el.innerText === '領収書を表示する';
+    return el.innerText === SHOW_RECIEPT_TEXT;
 });
 
 // open dialogs
@@ -26,10 +30,10 @@ x = async function(buttons, i) {
     console.log(new Date(), 'waiting 3 seconds');
     await new Promise((resolve) => setTimeout(resolve, 3000));
     console.log(new Date(), 'clicking download');
-    Array.from(document.querySelectorAll('a')).filter(el => el.innerText === 'PDF をダウンロード').pop().click();
+    Array.from(document.querySelectorAll('a')).filter(el => el.innerText === DOWNLOAD_PDF_BTN_TEXT).pop().click();
     console.log(new Date(), 'waiting 5 seconds');
     await new Promise((resolve) => setTimeout(resolve, 5000));
-    document.querySelector('button[aria-label="閉じる”]’).click()
+    document.querySelector('button[aria-label=' + CLOSE_BUTTON_TEXT + ']').click()
     console.log(new Date(), 'moving onto next...');
     if (buttons[i + 1]) {
       x(buttons, i + 1);
