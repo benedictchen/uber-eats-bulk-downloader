@@ -1,6 +1,12 @@
-SHOW_RECIEPT_TEXT = '領収書を表示する';  // Replace with text of url link for showing the reciept
-DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';  // Replace with PDF download link / button text content
-CLOSE_BUTTON_TEXT = "閉じる";  // Replace with close button aria-label (probably "Close" or something like that
+// For USA
+SHOW_RECIEPT_TEXT = 'View receipt';  // Replace with text of url link for showing the reciept
+DOWNLOAD_PDF_BTN_TEXT = 'Download PDF';  // Replace with PDF download link / button text content
+CLOSE_BUTTON_TEXT = "Close";  // Replace with close button aria-label (probably "Close" or something like that
+
+// For Japan
+// SHOW_RECIEPT_TEXT = '領収書を表示する';  // Replace with text of url link for showing the reciept
+// DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';  // Replace with PDF download link / button text content
+// CLOSE_BUTTON_TEXT = "閉じる";  // Replace with close button aria-label (probably "Close" or something like that
 
 /// GET ALL RESULTS 
 getPage = function() {
