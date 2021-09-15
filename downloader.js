@@ -2,16 +2,18 @@
 SHOW_RECIEPT_TEXT = 'View receipt';  // Replace with text of url link for showing the reciept
 DOWNLOAD_PDF_BTN_TEXT = 'Download PDF';  // Replace with PDF download link / button text content
 CLOSE_BUTTON_TEXT = "Close";  // Replace with close button aria-label (probably "Close" or something like that
+PAGINATION_BTN_TEXT = 'Show more'; // Button that loads the next results
 
 // For Japan
 // SHOW_RECIEPT_TEXT = '領収書を表示する';  // Replace with text of url link for showing the reciept
 // DOWNLOAD_PDF_BTN_TEXT = 'PDF をダウンロード';  // Replace with PDF download link / button text content
 // CLOSE_BUTTON_TEXT = "閉じる";  // Replace with close button aria-label (probably "Close" or something like that
+PAGINATION_BTN_TEXT = 'さらに表示';
 
 /// GET ALL RESULTS 
 getPage = function() {
     console.log('getting page')
-    return Array.from(document.querySelectorAll('button')).filter((btn) => btn.textContent === 'さらに表示').pop();
+    return Array.from(document.querySelectorAll('button')).filter((btn) => btn.textContent === PAGINATION_BTN_TEXT).pop();
 }
 
 function showStartButton() {
